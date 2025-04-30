@@ -1,0 +1,110 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #1e3a8a;
+      color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+       color: white;
+       text-decoration: none;
+       font-weight: bold;
+    }
+
+    .nav-links a:hover {
+       text-decoration: underline;
+    }
+
+    section {
+      scroll-margin-top: 80px; <!- Para que la barra de navegacion no tape el contenido ->
+      padding: 2rem;
+      background: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .espaciador {
+        height: 50px; /* espacio vertical de 50 píxeles */
+    }
+
+    .benefits, .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .benefit, .proyecto, .ventaja-subseccion {
+      flex: 1 1 30%;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .proyecto img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+
+    h2, h3 {
+      color: #1e3a8a;
+    }
+
+    .parallax-section {
+      background-image: url('parallax.png'); /* Cambia por tu imagen */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 400px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+     }
+
+    .parallax-content {
+       background-color: rgba(0, 0, 0, 0.5); /* oscurece ligeramente para que el texto resalte */
+       padding: 2rem;
+       border-radius: 10px;
+    }
+
+
+    <!- Esta parte se pone para que la barra de navegacion no tape el contenido ->
+    #inicio, #servicios, #galeria, #ventajas, #cotiza, #blog {
+        scroll-margin-top: 200px;
+    }
