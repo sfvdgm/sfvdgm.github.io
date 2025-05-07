@@ -83,7 +83,7 @@
     }
 
     .parallax-section {
-      background-image: url('parallax.png'); /* Cambia por tu imagen */
+      background-image: url('img3.jpeg'); /* Cambia por tu imagen */
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -104,7 +104,24 @@
     }
 
 
-    <!- Esta parte se pone para que la barra de navegacion no tape el contenido ->
+    /* Esta parte se pone para que la barra de navegacion no tape el contenido */
     #inicio, #servicios, #galeria, #ventajas, #cotiza, #blog {
         scroll-margin-top: 200px;
     }
+
+
+    /* Comoenza parte de los márgenes */
+    .contenido {
+       margin-left: auto;
+       margin-right: auto;
+       padding: 1rem;
+       max-width: 1200px; /* Ajuste de ancho de margen */
+    }
+
+    @media (max-width: 768px) {
+       .contenido {
+        padding: 0.5rem;
+        max-width: 100%;
+     }
+    } 
+    /* Termina parte de los márgenes */
